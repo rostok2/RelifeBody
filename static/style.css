@@ -1,0 +1,335 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1440px;
+    font-family: "Poppins", sans-serif;
+    background: #F7F6F5;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.open {
+    display: flex !important;
+}
+
+.header {
+    background-image: url(images/landingPage1/bg.png);
+    background-repeat: no-repeat;
+    max-width: 1392px;
+    min-height: 790px;
+    margin: 1.8%;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 5.35%;
+}
+
+.imgForBurger {
+    display: none;
+}
+
+.header-content .navbar {
+    padding-top: 16px;
+    margin-bottom: 64px;
+}
+
+.nav .nav-menu {
+    display: flex;
+    gap: 45px;
+    padding-right: 175px;
+    list-style: none;
+}
+
+.nav a {
+    color: #FAFAFA;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.social-icons2 {
+    display: none;
+    gap: 32px;
+}
+
+.nav span {
+    color: #FAFAFA;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 16px;
+    background-color: var(--Green, #0AE20A);
+}
+
+.hero-text h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.hero-text h4 {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 auto;
+}
+
+.social-icons {
+    max-width: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 145px;
+}
+
+.hamburger-menu {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #FFFFFF;
+}
+
+.hamburger-menu::before, .hamburger-menu::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+}
+
+.hamburger-menu::before { top: 0; }
+
+.hamburger-menu::after { bottom: 0; }
+
+.hamburger-menu.active span { transform: scale(0); }
+
+.hamburger-menu.active::before {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.hamburger-menu.active::after {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.phone-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    top: 464px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.phone-photo img {
+    width: 100%; /* Базовий розмір 100% відносно контейнера */
+    height: auto; /* Автоматичне збереження пропорцій */
+}
+
+/* Медіа-запити для адаптивних розмірів */
+@media (max-width: 1024px) {
+    .logoNav, .imgForBurger {
+        height: 38px;
+    }
+
+    .header {
+        min-height: 624px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+        margin-bottom: 4px;
+    }
+
+    .hero-text h4 {
+        font-size: 15px;
+    }
+
+    .social-icons {
+        margin-top: 50px;
+    }
+
+    .phone-photo {
+        gap: 30px;
+        top: 350px;
+    }
+
+    .phone-photo .m {
+        width: 40%;
+    }
+    
+    .phone-photo .mCentral {
+        width: 45%;
+    }
+
+    .nav .nav-menu {
+        padding-right: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logoNav, .imgForBurger {
+        height: 36px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .imgForBurger {
+        display: inline !important;
+    }
+
+    .logoNav {
+        display: none;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .hamburger-menu { 
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50%;
+    }
+
+    .phone-photo .m {
+        width: 50%;
+    }
+    
+    .phone-photo .mCentral {
+        width: 55%;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .nav { 
+        display: none;
+        background-image: url(images/landingPage1/bg.png);
+        background-repeat: no-repeat;
+        position: fixed;
+        width: 100%;
+        height: 368px;
+        top: 0; bottom: 0; left: 0; right: 0;
+        overflow: auto;
+        justify-content: space-around;
+        gap: 50%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-menu {
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    .social-icons2 {
+        display: flex;
+        max-height: 24px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .logoNav, .imgForBurger {
+        height: 36px;
+    }
+
+    .hero-text h1 {
+        font-size: 23px;
+    }
+
+    .hero-text h4 {
+        max-width: 271px;
+    }
+
+    .phone-photo .m {
+        display: none;
+    }
+    
+    .phone-photo {
+        top: 250px
+    }
+
+    .phone-photo .mCentral {
+        width: 150%;
+    }
+
+    .header-content .navbar {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .phone-photo .mCentral {
+        width: 150%;
+    }
+
+    .header-content .navbar {
+        margin-bottom: 20px;
+    }
+}
+
