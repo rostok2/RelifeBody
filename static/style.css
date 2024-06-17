@@ -22,6 +22,7 @@ body {
     display: flex !important;
 }
 
+/* header */
 .header {
     background-image: url(images/landingPage1/bg.png);
     background-repeat: no-repeat;
@@ -178,12 +179,128 @@ body {
     height: auto;
 }
 
+
+/* about section */
 .about-section {
+    margin-top: 287px;
 
 }
 
+.about-section .container {
+    margin: 0 auto;
+}
+
+.download-links {
+    margin: 0 auto;
+    max-width: 451px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.about-section h1 {
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin-top: 90px;
+}
+
+.features {
+    margin-top: 156px;
+    display: flex;
+    flex-direction: column;
+    gap: 159px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-evenly;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 596px;
+    padding-left: 35px;
+    padding-bottom: 25px;
+}
+
+.feature-text p {
+    color: #636363;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    position: relative;
+    top: -10px;
+}
+
+.feature-text h2 {
+    color: var(--Black, #111);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.feature-text .highlight {
+    color: #111;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.button1 {
+    border: none; 
+    border-radius: 10px;
+    background: #0AE20A; width: 186px; height: 48px;
+    color: #111111;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+.button2 {
+    border-radius: 8px; 
+    border: 1px solid #111; width: 186px; height: 48px;
+    color: #111111;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-item.reverse .feature-text {
+    margin-left: 35px;
+    padding-left: 0;
+}
+
+.feature-item.reverse img {
+    padding-left: 100px;
+}
+
+
 /* Медіа-запити для адаптивних розмірів */
 @media (max-width: 1024px) {
+
+    /* header */
     .logoNav, .imgForBurger {
         height: 38px;
     }
@@ -221,9 +338,76 @@ body {
     .nav .nav-menu {
         padding-right: 70px;
     }
+
+    .download-links {
+        padding-left: 3.7%;
+    }
+
+    /* about section */
+    .feature-item {
+        margin: 0 20px;
+        gap: 10px;
+    }
+
+    .feature-item.reverse img {
+        padding-left: 40px; /* Зміщення зображення вліво для .reverse */
+    }
+
+}
+
+@media (max-width: 860px) {
+
+    /* about section */
+    .about-section {
+        margin-top: 150px;
+    }
+
+    .download-links {
+        padding-left: 1%;
+    }
+
+    .about-section h1 {
+        margin-top: 40px;
+    }
+
+    .features {
+        gap: 50px;
+        margin-top: 100px;
+    }
+    .feature-item {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+    .feature-item.reverse {
+        flex-direction: column;
+    }
+    .feature-item img {
+        padding-left: 0;
+    }
+
+    .feature-item.reverse img {
+        padding-left: 0;
+    }
+
+    .feature-text {
+        padding-left: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .feature-item.reverse .feature-text {
+        margin-left: 0;
+    }
+
+    .feature-text p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
+
+    /* header */
     .logoNav, .imgForBurger {
         height: 36px;
     }
@@ -293,11 +477,16 @@ body {
         display: flex;
         max-height: 24px;
     }
+
+    /* about section */
+    .about-section {
+        margin-top: 200px;
+    }
 }
 
 
 @media (max-width: 600px) {
-
+    /* header */
     .hero-text h1 {
         font-size: 30px;
     }
@@ -322,9 +511,20 @@ body {
         margin-bottom: 30px;
     }
 
+    /* about section */
+    .about-section {
+        margin-top: 280px;
+    }
+
+    .about-section img {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 430px) {
+
+    /* header */
     .logoNav, .imgForBurger {
         height: 36px;
     }
@@ -353,9 +553,37 @@ body {
         margin-bottom: 30px;
     }
 
+    /* about section */
+    .download-links {
+        padding-left: 0;
+    }
+
+    .about-section h1 {
+        font-size: 36px;
+    }
+
+    .features {
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .feature-text p {
+        font-size: 14px;
+    }
+    
+    .feature-text h2 {
+        font-size: 24px;
+    }
+    
+    .feature-text .highlight {
+        font-size: 14px;
+    }
+    
 }
 
 @media (max-width: 375px) {
+
+    /* header */
     .phone-photo .mCentral {
         width: 150%;
     }
@@ -369,3 +597,9 @@ body {
     }
 }
 
+@media (max-width: 320px){
+    /* about section */
+    .about-section {
+        margin-top: 180px;
+    }
+}
