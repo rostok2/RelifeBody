@@ -487,6 +487,116 @@ body {
     padding-left: 20px;
 }
 
+/* final-info*/
+.final-info{
+    margin-top: 135px;
+}
+
+.final-info .container {
+    max-width: 1240px;
+    margin: 0 7%;
+}
+
+.final-content {
+    display: flex;
+    align-items: center;
+}
+
+.final-content img {
+    margin-left: 117px;
+}
+
+.content {
+    max-width: 712px;
+    margin-top: 55px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.content h1 {
+    color: #111;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.content p {
+    color: #636363;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 30px 0;
+    max-width: 560px;
+}
+
+.download-links2 {
+    display: flex;
+    margin-left: -26px;
+}
+
+.download-links2_2 {
+    display: none;
+}
+
+.download-links2 img {
+    margin: 0;
+}
+
+.scrolling-container {
+    margin-top: 160px;
+}
+
+.scrolling-container h2 {
+    color: #111;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    padding-bottom: 18px;
+    text-align: left;
+}
+
+
+.scrolling-text {
+    max-width: 901px;
+    height: 126px;
+    padding-right: 42px;
+    box-sizing: content-box;
+}
+
+.scrolling-text p {
+    margin: 0;
+    color: #111;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+.simplebar-track.simplebar-vertical {
+    background-color: #D8D8D8;
+    width: 2px;
+    border-radius: 5px;
+}
+
+.simplebar-scrollbar:before {
+    background-color: #0AE20A;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 2px;
+    border-radius: 5px;
+    opacity: 1;
+}
+
 /* Медіа-запити для адаптивних розмірів */
 @media (max-width: 1220px) {
     /*testimonials*/
@@ -570,6 +680,21 @@ body {
     .user-photo {
         width: 40%;
     }*/
+
+    /* final-info*/
+    .final-content img {
+        width: 35%;
+        margin-left: 50px;
+    }
+
+    .download-links2 img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 860px) {
@@ -638,6 +763,51 @@ body {
     .user-photo {
         display: none;
     }*/
+
+    /*final-info*/
+    .final-info {
+        margin-top: 60px;
+    }
+
+    .final-content {
+        flex-direction: column; /* Змінюємо напрямок flex-елементів на колонковий */
+        align-items: center; /* Вирівнюємо елементи по центру */
+        text-align: center; /* Центруємо текст */
+        margin: 0 auto;
+    }
+
+    .final-content img {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 330px;
+    }
+
+    .content {
+        text-align: center; /* Центруємо текст всередині контенту */
+    }
+
+    .content p {
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    .download-links2_2 {
+        display: flex;
+        justify-content: center; /* Центруємо кнопки завантаження */
+        
+    }
+
+    .download-links2_2 img {
+        width: 100%;
+    }
+
+    .download-links2 {
+        display: none;
+    }
+    
+    .scrolling-container {
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -734,7 +904,25 @@ body {
     .faq-answer {
         font-size: 14px;
     }
-    
+
+    /*final-info*/
+    .content p {
+        max-width: 400px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+    .download-links2_2 img {
+        width: 256px;
+    }
+
+    .scrolling-container h2 {
+        font-size: 18px;
+    }
+
+    .scrolling-text {
+        height: 150px;
+    }
 }
 
 
@@ -773,6 +961,18 @@ body {
         width: 100%;
     }
 
+    /*final-info*/
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .download-links2_2 img {
+        width: 200px;
+    }
+
+    .scrolling-text {
+        height: 200px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -866,6 +1066,31 @@ body {
     .faq-answer {
         font-size: 14px;
     }
+
+    /*final-info*/
+    .final-info {
+        margin-top: 40px;
+    }
+
+    .final-content img {
+        width: 90%;
+    }
+
+    .download-links2_2 img {
+        width: 200px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+    
+    .scrolling-container {
+        margin-top: 30px;
+    }
+
+    .scrolling-text {
+        height: 250px;
+    }
 }
 
 @media (max-width: 376px) {
@@ -892,6 +1117,19 @@ body {
     .text-item p {
         font-size: 18px;
     }*/
+
+    /*final-info*/
+    .content h1 {
+        font-size: 20px;
+    }
+
+    .download-links2_2 img {
+        width: 180px;
+    }
+
+    .scrolling-text {
+        height: 280px;
+    }
 }
 
 @media (max-width: 320px){
@@ -904,4 +1142,17 @@ body {
     .text-item p {
         font-size: 15px;
     }*/
+
+    /*final-info*/
+    .content h1 {
+        font-size: 20px;
+    }
+
+    .download-links2_2 img {
+        width: 165px;
+    }
+
+    .scrolling-text {
+        height: 300px;
+    }
 }
