@@ -297,7 +297,127 @@ body {
 }
 
 
+
+/*testimonials
+.testimonials {
+    background-image: url(images/landingPage1/bg2.png);
+    background-repeat: no-repeat;
+    max-width: 1392px;
+    min-height: 790px;
+    margin: 1.65%;
+    margin-top: 160px;
+}
+
+.testimonials h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    padding-top: 80px;
+}
+
+.testimonial-item {
+    display: flex;
+}
+
+.user-photo {
+    margin-left: 55px;
+}
+
+.text-item {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 556px;
+    margin-top: 4.5%;
+    margin-left: 35px;
+}
+
+.testimonial-item .text-item img {
+    max-height: 24px;
+    margin-left: 0;
+}
+
+.text-item p {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: -0.64px;
+    text-align: left;
+    max-width: 520px;
+}
+
+.user-item {
+    display: flex;
+}
+
+.new-coments {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-4xl, 32px);
+    padding-left: 188px;
+}
+
+.testimonial-item .new-coments img {
+    max-height: 56px;
+}
+
+.user-info {
+    display: flex;
+    margin-bottom: 40px;
+    max-height: 56px;
+}
+
+.user-text {
+    padding-left: 15px;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.testimonial-item .user-info img {
+    max-height: 56px;
+    margin-left: 0;
+
+}
+
+.text-item .user-name {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.text-item .user-role {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 5px;
+}
+*/
+
 /* Медіа-запити для адаптивних розмірів */
+@media (max-width: 1220px) {
+    /*testimonials*/
+    .text-item p {
+        font-size: 26px;
+    }
+
+    .user-photo {
+        width: 50%;
+    }
+}
+
 @media (max-width: 1024px) {
 
     /* header */
@@ -353,6 +473,22 @@ body {
         padding-left: 40px; /* Зміщення зображення вліво для .reverse */
     }
 
+    /*testimonials
+    .testimonials {
+        min-height: 650px;
+    }
+
+    .testimonials h1 {
+        padding-top: 50px;
+    }
+
+    .text-item p {
+        font-size: 26px;
+    }
+
+    .user-photo {
+        width: 40%;
+    }*/
 }
 
 @media (max-width: 860px) {
@@ -403,6 +539,24 @@ body {
     .feature-text p {
         text-align: center;
     }
+
+    /*testimonials
+    .testimonials {
+        min-height: 550px;
+    }
+
+    .testimonials h1 {
+        margin-bottom: 35px;
+        font-size: 40px;
+    }
+
+    .text-item p {
+        font-size: 26px;
+    }
+
+    .user-photo {
+        display: none;
+    }*/
 }
 
 @media (max-width: 768px) {
@@ -578,10 +732,23 @@ body {
     .feature-text .highlight {
         font-size: 14px;
     }
-    
+
+    /*testimonials
+    .testimonials {
+        min-height: 550px;
+    }
+
+    .testimonials h1 {
+        margin-bottom: 35px;
+        font-size: 40px;
+    }
+
+    .text-item p {
+        font-size: 20px;
+    }*/
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
 
     /* header */
     .phone-photo .mCentral {
@@ -595,6 +762,16 @@ body {
     .hero-text h1 {
         font-size: 21px;
     }
+
+    /*testimonials
+    .testimonials h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .text-item p {
+        font-size: 18px;
+    }*/
 }
 
 @media (max-width: 320px){
@@ -602,4 +779,9 @@ body {
     .about-section {
         margin-top: 180px;
     }
+
+    /*testimonials
+    .text-item p {
+        font-size: 15px;
+    }*/
 }
