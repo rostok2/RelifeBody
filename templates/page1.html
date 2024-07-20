@@ -2,7 +2,7 @@
 
 {% block body %}
 <div class="overlay"></div>
-<header class="header">
+<header class="header" id="main">
     <div class="container">
         <div class="header-content">
             <nav class="navbar">
@@ -10,10 +10,10 @@
                 <div class="nav">
                     <img src="static/images/landingPage1/logo.svg" class="logoNav">
                     <ul class="nav-menu">
-                        <li><a href="#">Головна</a></li>
-                        <li><a href="#">Про нас</a></li>
-                        <li><a href="#">Відгуки</a></li>
-                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#main">Головна</a></li>
+                        <li><a href="#aboutUs">Про нас</a></li>
+                        <li><a href="#reviews">Відгуки</a></li>
+                        <li><a href="#contacts">Контакти</a></li>
                     </ul>
                     <div class="social-icons2">
                         <img src="static/images/landingPage1/facebook.svg" alt="Facebook">
@@ -58,7 +58,7 @@
             <a href="#"><img src="static/images/landingPage1/AppleDownload.svg" alt="Download on Apple"></a>
             <a href="#"><img src="static/images/landingPage1/GoogleDownload.svg" alt="Download on Google"></a>
         </div>
-        <h1>Про нас</h1>
+        <h1 id="aboutUs">Про нас</h1>
         <div class="features">
             <div class="feature-item">
                 <img src="static/images/landingPage1/iPhone15PlusWithRectangl1.png" class="phone1">
@@ -102,7 +102,7 @@
         </div>
     </div>
 </section>
-<section class="testimonials"><!--
+<section class="testimonials" id="reviews"><!--
     <div class="container">
             <h1>Наші клієнти</h1>
             <div class="testimonial-item">
@@ -262,7 +262,7 @@
     </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="contacts">
     <div class="container">
         <div class="footer-content">
             <div class="footer-info">
@@ -271,10 +271,10 @@
                     <p>Інтуїтивний Додаток для Ефективного Відстеження Харчування</p>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Про нас</a></li>
-                    <li><a href="#">Відгуки</a></li>
-                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#main">Головна</a></li>
+                    <li><a href="#aboutUs">Про нас</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
                 </ul>
             </div>
             <div class="download-links">

@@ -1,5 +1,6 @@
 /* General Styles */
 html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
 }
@@ -753,6 +754,8 @@ body {
     margin: 0;
 }
 
+/* hover */
+
 
 /* Media Queries */
 @media (max-width: 1220px) {
@@ -1136,23 +1139,23 @@ body {
     .hero-text h1 {
         font-size: 30px;
     }
-    
+
     .hero-text h4 {
         max-width: 271px;
     }
-    
+
     .phone-photo .m {
         display: none;
     }
-    
+
     .phone-photo .mCentral {
         width: 200%;
     }
-    
+
     .phone-photo {
         top: 300px
     }
-    
+
     .header-content .navbar {
         margin-bottom: 30px;
     }
