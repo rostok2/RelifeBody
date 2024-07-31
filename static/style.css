@@ -123,6 +123,17 @@ body {
     box-sizing: border-box;
 }
 
+.language-switch span {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease; /* Додаємо плавний перехід */
+}
+
+.language-switch span.active {
+    opacity: 1;
+}
+
+
 /*Phone*/
 .phone-photo {
     display: flex;
@@ -516,6 +527,7 @@ body {
 }
 
 .faq-question .icon {
+    color: #111;
     font-size: 35px;
     line-height: 0;
 }
@@ -1048,7 +1060,7 @@ body {
         background-repeat: no-repeat;
         position: fixed;
         width: 100%;
-        max-height: 368px;
+        max-height: 390px;
         top: 0; bottom: 0; left: 0; right: 0;
         overflow: auto;
         justify-content: space-around;
@@ -1061,6 +1073,7 @@ body {
         padding-top: 16px;
         width: calc(100% - 12%);
         box-sizing: border-box;
+        margin-bottom: 20px;
     }
 
     .nav.open .nav-menu{

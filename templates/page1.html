@@ -1,121 +1,106 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<div class="overlay"></div>
-<header class="header" id="main">
-    <div class="container">
-        <div class="header-content">
-            <nav class="navbar">
-                <img src="static/images/landingPage1/logo.svg" class="logo">
-                <div class="nav">
-                    <img src="static/images/landingPage1/logo.svg" class="logoNav">
-                    <ul class="nav-menu">
-                        <li><a href="#main">Головна</a></li>
-                        <li><a href="#aboutUs">Про нас</a></li>
-                        <li><a href="#reviews">Відгуки</a></li>
-                        <li><a href="#contacts">Контакти</a></li>
-                    </ul>
-                    <div class="social-icons2">
-                        <img src="static/images/landingPage1/facebook.svg" alt="Facebook">
-                        <img src="static/images/landingPage1/insta.svg" alt="Instagram">
-                        <img src="static/images/landingPage1/twitter.svg" alt="Twitter">
-                        <img src="static/images/landingPage1/linkedin.svg" alt="LinkedIn">
+    <div class="overlay"></div>
+    <header class="header" id="main">
+        <div class="container">
+            <div class="header-content">
+                <nav class="navbar">
+                    <img src="static/images/landingPage1/logo.svg" class="logo">
+                    <div class="nav">
+                        <img src="static/images/landingPage1/logo.svg" class="logoNav">
+                        <ul class="nav-menu">
+                            <li><a href="#main" data-translate-key="nav-home">Головна</a></li>
+                            <li><a href="#aboutUs" data-translate-key="nav-about">Про нас</a></li>
+                            <li><a href="#reviews" data-translate-key="nav-reviews">Відгуки</a></li>
+                            <li><a href="#contacts" data-translate-key="nav-contacts">Контакти</a></li>
+                        </ul>
+                        <div class="social-icons2">
+                            <img src="static/images/landingPage1/facebook.svg" alt="Facebook">
+                            <img src="static/images/landingPage1/insta.svg" alt="Instagram">
+                            <img src="static/images/landingPage1/twitter.svg" alt="Twitter">
+                            <img src="static/images/landingPage1/linkedin.svg" alt="LinkedIn">
+                        </div>
+                        <div class="language-switch">
+                            <span id="language-ua" class="active">UA</span>
+                            <div class="vertical-line"></div>
+                            <span id="language-en">EN</span>
+                        </div>
                     </div>
-                    <div class="language-switch">
-                        <span>UA</span>
-                        <div class="vertical-line"></div>
-                        <span>EN</span>
+                    <div class="hamburger-menu">
+                        <span></span>
+                    </div>
+                </nav>
+
+                <div class="hero-text">
+                    <h1 data-translate-key="main-title">Ідеальний застосунок<br>для рахунку калорій</h1>
+                    <h4 data-translate-key="sub-title">Ваш особистий помічник у калорійному рахунку - просто, зручно та надійно</h4>
+                </div>
+                <div class="social-icons">
+                    <img src="static/images/landingPage1/facebook.svg" alt="Facebook">
+                    <img src="static/images/landingPage1/insta.svg" alt="Instagram">
+                    <img src="static/images/landingPage1/twitter.svg" alt="Twitter">
+                    <img src="static/images/landingPage1/linkedin.svg" alt="LinkedIn">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="phone-photo">
+        <img src="static/images/landingPage1/mockupsLeft.png" class="m">
+        <img src="static/images/landingPage1/mockupsCentral.png" class="mCentral">
+        <img src="static/images/landingPage1/mockupsRight.png" class="m">
+    </div>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="download-links">
+                <a href="#"><img src="static/images/landingPage1/AppleDownload.svg" alt="Download on Apple"></a>
+                <a href="#"><img src="static/images/landingPage1/GoogleDownload.svg" alt="Download on Google"></a>
+            </div>
+            <h1 id="aboutUs" data-translate-key="about-us">Про нас</h1>
+            <div class="features">
+                <div class="feature-item">
+                    <img src="static/images/landingPage1/iPhone15PlusWithRectangl1.png" class="phone1">
+                    <div class="feature-text">
+                        <h2 data-translate-key="goal-title">Індивідуальні Цілі</h2>
+                        <p data-translate-key="goal-description">Цей інтерфейс дозволяє вам визначити специфічні цілі, такі як зниження ваги, підтримка ваги або набір маси. Ви також можете задати конкретні цілі за кількістю спожитих калорій, макронутрієнтів або навіть кількості води, яку ви плануєте випивати щодня. Функціонал додатку забезпечує персоналізовані рекомендації та поради, як досягти цих цілей з урахуванням вашого стилю життя та переваг. Завдяки вбудованим нагадуванням та прогрес-барам, ви завжди будете на курсі до досягнення своїх здорових звичок.</p>
+                        <button class="button1" data-translate-key="learn-more">Дізнатись більше</button>
                     </div>
                 </div>
-                <div class="hamburger-menu">
-                    <span></span>
+                <div class="feature-item reverse">
+                    <img src="static/images/landingPage1/iPhone15PlusWithRectangl2.png" class="phone2">
+                    <div class="feature-text reverse">
+                        <h2 data-translate-key="personalization-title">Персоналізація досвіду</h2>
+                        <p data-translate-key="personalization-description">На екрані "Профіль" можна внести особисті дані (вік, стать, вага, зріст, активність), що дозволяє точно розрахувати денну потребу в калоріях та макронутрієнтах. Користувачі також можуть налаштувати дієтичні переваги, як-от веганське чи безглютенове харчування, і синхронізувати додаток з фітнес-трекерами, що сприяє ефективному відстеженню здорових звичок і досягненню цілей.</p>
+                        <button class="button2" data-translate-key="learn-more">Дізнатись більше</button>
+                    </div>
                 </div>
-            </nav>
-
-            <div class="hero-text">
-                <h1>Ідеальний застосунок<br>для рахунку калорій</h1>
-                <h4>Ваш особистий помічник у калорійному рахунку - просто, зручно та надійно</h4>
-            </div>
-            <div class="social-icons">
-                <img src="static/images/landingPage1/facebook.svg" alt="Facebook">
-                <img src="static/images/landingPage1/insta.svg" alt="Instagram">
-                <img src="static/images/landingPage1/twitter.svg" alt="Twitter">
-                <img src="static/images/landingPage1/linkedin.svg" alt="LinkedIn">
-            </div>
-        </div>
-    </div>
-</header>
-
-<div class="phone-photo">
-    <img src="static/images/landingPage1/mockupsLeft.png" class="m">
-    <img src="static/images/landingPage1/mockupsCentral.png" class="mCentral">
-    <img src="static/images/landingPage1/mockupsRight.png" class="m">
-</div>
-
-<section class="about-section">
-    <div class="container">
-        <div class="download-links">
-            <a href="#"><img src="static/images/landingPage1/AppleDownload.svg" alt="Download on Apple"></a>
-            <a href="#"><img src="static/images/landingPage1/GoogleDownload.svg" alt="Download on Google"></a>
-        </div>
-        <h1 id="aboutUs">Про нас</h1>
-        <div class="features">
-            <div class="feature-item">
-                <img src="static/images/landingPage1/iPhone15PlusWithRectangl1.png" class="phone1">
-                <div class="feature-text">
-                    <h2>Індивідуальні Цілі</h2>
-                    <p>Цей інтерфейс дозволяє вам визначити специфічні цілі, такі як
-                        зниження ваги, підтримка ваги або набір маси. Ви також можете
-                        задати конкретні цілі за кількістю спожитих калорій, макронутрієнтів
-                        або навіть кількості води, яку ви плануєте випивати щодня. Функціонал
-                        додатку забезпечує персоналізовані рекомендації та поради, як досягти цих
-                        цілей з урахуванням вашого стилю життя та переваг. Завдяки вбудованим нагадуванням
-                        та прогрес-барам, ви завжди будете на курсі до досягнення своїх здорових звичок.</p>
-                    <button class="button1">Дізнатись більше</button>
-                </div>
-            </div>
-            <div class="feature-item reverse">
-                <img src="static/images/landingPage1/iPhone15PlusWithRectangl2.png" class="phone2">
-                <div class="feature-text reverse">
-                    <h2>Персоналізація досвіду</h2>
-                    <p>На екрані "Профіль" можна внести особисті дані (вік, стать, вага, зріст, активність),
-                        що дозволяє точно розрахувати денну потребу в калоріях та макронутрієнтах.
-                        Користувачі також можуть налаштувати дієтичні переваги, як-от веганське чи безглютенове
-                        харчування, і синхронізувати додаток з фітнес-трекерами, що сприяє ефективному відстеженню
-                        здорових звичок і досягненню цілей.</p>
-                    <button class="button2">Дізнатись більше</button>
-                </div>
-            </div>
-            <div class="feature-item">
-                <img src="static/images/landingPage1/iPhone15PlusWithRectangl3.png" class="phone3">
-                <div class="feature-text">
-                    <h2>Додавання їжі з легкістю</h2>
-                    <p>З <span class="highlight">ReliefBody</span> ви можете легко додавати продукти
-                        до свого щоденника харчування. Використовуючи сучасні технології, наш додаток
-                        дозволяє сканувати штрих-коди продуктів для швидкого вводу, а також вручну
-                        вводити їжу через зручний інтерфейс пошуку. Крім того, ви можете створювати
-                        власні страви та враховувати рецепти, забезпечуючи точний облік калорій та
-                        макронутрієнтів для повного контролю над вашим раціоном.</p>
-                    <button class="button1">Дізнатись більше</button>
+                <div class="feature-item">
+                    <img src="static/images/landingPage1/iPhone15PlusWithRectangl3.png" class="phone3">
+                    <div class="feature-text">
+                        <h2 data-translate-key="food-title">Додавання їжі з легкістю</h2>
+                        <p data-translate-key="food-description">З <span class="highlight">ReliefBody</span> ви можете легко додавати продукти до свого щоденника харчування. Використовуючи сучасні технології, наш додаток дозволяє сканувати штрих-коди продуктів для швидкого вводу, а також вручну вводити їжу через зручний інтерфейс пошуку. Крім того, ви можете створювати власні страви та враховувати рецепти, забезпечуючи точний облік калорій та макронутрієнтів для повного контролю над вашим раціоном.</p>
+                        <button class="button1" data-translate-key="learn-more">Дізнатись більше</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="testimonials" id="reviews"><!--
-    <div class="container">
-            <h1>Наші клієнти</h1>
+    </section>
+
+    <section class="testimonials" id="reviews">
+        <!--<div class="container">
+            <h1 data-translate-key="testimonials-title">Наші клієнти</h1>
             <div class="testimonial-item">
-
                 <div class="text-item">
                     <img src="static/images/landingPage1/stars.svg" alt="Stars">
-                    <p>Інтерфейс інтуїтивний, а велика база продуктів та функція сканування штрих-кодів роблять введення їжі легким і швидким. Всім рекомендую!</p>
+                    <p data-translate-key="testimonial-text1">Інтерфейс інтуїтивний, а велика база продуктів та функція сканування штрих-кодів роблять введення їжі легким і швидким. Всім рекомендую!</p>
                     <div class="user-item">
                         <div class="user-info">
                             <img src="static/images/landingPage1/avatar.png" alt="User Avatar">
                             <div class="user-text">
-                                <p class="user-name">Alina Sematska</p>
-                                <p class="user-role">Designer, Relief Body</p>
+                                <p class="user-name" data-translate-key="testimonial-name1">Alina Sematska</p>
+                                <p class="user-role" data-translate-key="testimonial-role1">Designer, Relief Body</p>
                             </div>
                         </div>
                         <div class="new-coments">
@@ -127,173 +112,180 @@
                 <img src="static/images/landingPage1/userPhoto.png" class="user-photo">
             </div>
         </div>-->
-</section>
+    </section>
 
-<section class="faq">
-    <div class="container">
-        <h1>Часті питання</h1>
-        <div class="faq-item"  style="border-top: none;">
-            <button class="faq-question" onclick="toggleAnswer(this)">
-                <span class="faq-question-text">Як скористатися функцією сканування штрих-кодів?</span>
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Щоб скористатися функцією сканування штрих-кодів у додатку CalorieCount+, виконайте наступні кроки:
-                <ol>
-                    <li>Відкрийте додаток та перейдіть до розділу додавання нового продукту в свій щоденник харчування.</li>
-                    <li>Натисніть на іконку штрих-коду, яка знаходиться поруч з полем пошуку продукту. Це активує камеру вашого пристрою.</li>
-                    <li>Наведіть камеру на штрих-код продукту, який ви хочете додати. Переконайтеся, що штрих-код чітко видно і знаходиться у рамці камери.</li>
-                    <li>Дочекайтеся, поки додаток сканує штрих-код. Це займе лише кілька секунд.</li>
-                    <li>Після успішного сканування, інформація про продукт автоматично з'явиться у вашому журналі харчування. Ви можете перевірити або відредагувати кількість продукту, перш ніж зберегти запис.</li>
-                </ol>
+    <section class="faq">
+        <div class="container">
+            <h1 data-translate-key="faq-title">Часті питання</h1>
+            <div class="faq-item" style="border-top: none;">
+                <button class="faq-question" onclick="toggleAnswer(this)">
+                    <span class="faq-question-text" data-translate-key="faq-question1">Як скористатися функцією сканування штрих-кодів?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div data-translate-key="faq-answer1">Щоб скористатися функцією сканування штрих-кодів у додатку CalorieCount+, виконайте наступні кроки:</div>
+                    <ol>
+                        <li data-translate-key="faq-answer1-step1">Відкрийте додаток CalorieCount+ на своєму пристрої.</li>
+                        <li data-translate-key="faq-answer1-step2">Натисніть на іконку штрих-коду у верхньому правому куті головного екрану.</li>
+                        <li data-translate-key="faq-answer1-step3">Наведіть камеру на штрих-код продукту, який ви хочете додати.</li>
+                        <li data-translate-key="faq-answer1-step4">Зачекайте, поки додаток розпізнає штрих-код і завантажить інформацію про продукт.</li>
+                        <li data-translate-key="faq-answer1-step5">Перевірте та підтвердьте додану інформацію, щоб вона збереглася у вашому щоденнику харчування.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">
+                    <span class="faq-question-text" data-translate-key="faq-question2">Чи можна додавати власні продукти до бази даних?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div data-translate-key="faq-answer2">Так, ви можете додавати власні продукти до бази даних у додатку CalorieCount+. Для цього виконайте наступні кроки:</div>
+                    <ol>
+                        <li data-translate-key="faq-answer2-step1">Відкрийте додаток CalorieCount+ на своєму пристрої.</li>
+                        <li data-translate-key="faq-answer2-step2">Перейдіть до розділу "Мої продукти".</li>
+                        <li data-translate-key="faq-answer2-step3">Натисніть на кнопку "Додати продукт".</li>
+                        <li data-translate-key="faq-answer2-step4">Введіть необхідну інформацію про продукт, таку як назва, калорійність, макронутрієнти та інші характеристики.</li>
+                        <li data-translate-key="faq-answer2-step5">Збережіть продукт для подальшого використання у вашому щоденнику харчування.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">
+                    <span class="faq-question-text" data-translate-key="faq-question3">Як додаток враховує фізичну активність?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div data-translate-key="faq-answer3">Додаток CalorieCount+ враховує вашу фізичну активність, дозволяючи вам синхронізувати дані з фітнес-трекерами. Для цього виконайте наступні кроки:</div>
+                    <ol>
+                        <li data-translate-key="faq-answer3-step1">Перейдіть до налаштувань додатку CalorieCount+.</li>
+                        <li data-translate-key="faq-answer3-step2">Знайдіть розділ "Фітнес-трекери".</li>
+                        <li data-translate-key="faq-answer3-step3">Виберіть ваш фітнес-трекер зі списку підтримуваних пристроїв.</li>
+                        <li data-translate-key="faq-answer3-step4">Синхронізуйте додаток з вашим трекером, слідуючи інструкціям на екрані.</li>
+                        <li data-translate-key="faq-answer3-step5">Переглядайте дані про фізичну активність у вашому щоденнику харчування.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">
+                    <span class="faq-question-text" data-translate-key="faq-question4">Чи є в додатку можливість налаштування дієтичних обмежень, як-от безглютенова або веганська дієта?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div data-translate-key="faq-answer4">Так, додаток CalorieCount+ дозволяє налаштовувати дієтичні обмеження. Для цього виконайте наступні кроки:</div>
+                    <ol>
+                        <li data-translate-key="faq-answer4-step1">Перейдіть до налаштувань вашого профілю в додатку.</li>
+                        <li data-translate-key="faq-answer4-step2">Знайдіть розділ "Дієтичні обмеження".</li>
+                        <li data-translate-key="faq-answer4-step3">Виберіть обмеження, які вас цікавлять, такі як безглютенова, веганська, вегетаріанська дієта тощо.</li>
+                        <li data-translate-key="faq-answer4-step4">Збережіть зміни, щоб вони були враховані при підрахунку калорій та макронутрієнтів.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">
+                    <span class="faq-question-text" data-translate-key="faq-question5">Як можна синхронізувати дані з іншими додатками або пристроями?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div data-translate-key="faq-answer5">Додаток CalorieCount+ дозволяє синхронізувати дані з іншими додатками або пристроями. Для цього виконайте наступні кроки:</div>
+                    <ol>
+                        <li data-translate-key="faq-answer5-step1">Перейдіть до налаштувань додатку CalorieCount+.</li>
+                        <li data-translate-key="faq-answer5-step2">Знайдіть розділ "Інтеграції".</li>
+                        <li data-translate-key="faq-answer5-step3">Виберіть додаток або пристрій, з яким ви хочете синхронізувати дані.</li>
+                        <li data-translate-key="faq-answer5-step4">Дотримуйтесь інструкцій на екрані для завершення синхронізації.</li>
+                        <li data-translate-key="faq-answer5-step5">Переглядайте дані з інших додатків або пристроїв у вашому щоденнику харчування.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">
+                    <span class="faq-question-text" data-translate-key="faq-question6">Як змінити мову в додатку?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div data-translate-key="faq-answer6">Щоб змінити мову в додатку CalorieCount+, перейдіть до налаштувань та виберіть бажану мову. Виконайте наступні кроки:</div>
+                    <ol>
+                        <li data-translate-key="faq-answer6-step1">Відкрийте додаток CalorieCount+ на своєму пристрої.</li>
+                        <li data-translate-key="faq-answer6-step2">Перейдіть до налаштувань.</li>
+                        <li data-translate-key="faq-answer6-step3">Знайдіть розділ "Мова".</li>
+                        <li data-translate-key="faq-answer6-step4">Виберіть бажану мову зі списку доступних мов.</li>
+                        <li data-translate-key="faq-answer6-step5">Збережіть зміни, щоб застосувати нову мову інтерфейсу.</li>
+                    </ol>
+                </div>
             </div>
         </div>
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleAnswer(this)">
-                <span class="faq-question-text">Чи можна додавати власні продукти до бази даних?</span>
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Щоб скористатися функцією сканування штрих-кодів у додатку CalorieCount+, виконайте наступні кроки:
-                <ol>
-                    <li>Відкрийте додаток та перейдіть до розділу додавання нового продукту в свій щоденник харчування.</li>
-                    <li>Натисніть на іконку штрих-коду, яка знаходиться поруч з полем пошуку продукту. Це активує камеру вашого пристрою.</li>
-                    <li>Наведіть камеру на штрих-код продукту, який ви хочете додати. Переконайтеся, що штрих-код чітко видно і знаходиться у рамці камери.</li>
-                    <li>Дочекайтеся, поки додаток сканує штрих-код. Це займе лише кілька секунд.</li>
-                    <li>Після успішного сканування, інформація про продукт автоматично з'явиться у вашому журналі харчування. Ви можете перевірити або відредагувати кількість продукту, перш ніж зберегти запис.</li>
-                </ol>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleAnswer(this)">
-                <span class="faq-question-text">Як додаток враховує фізичну активність?</span>
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Щоб скористатися функцією сканування штрих-кодів у додатку CalorieCount+, виконайте наступні кроки:
-                <ol>
-                    <li>Відкрийте додаток та перейдіть до розділу додавання нового продукту в свій щоденник харчування.</li>
-                    <li>Натисніть на іконку штрих-коду, яка знаходиться поруч з полем пошуку продукту. Це активує камеру вашого пристрою.</li>
-                    <li>Наведіть камеру на штрих-код продукту, який ви хочете додати. Переконайтеся, що штрих-код чітко видно і знаходиться у рамці камери.</li>
-                    <li>Дочекайтеся, поки додаток сканує штрих-код. Це займе лише кілька секунд.</li>
-                    <li>Після успішного сканування, інформація про продукт автоматично з'явиться у вашому журналі харчування. Ви можете перевірити або відредагувати кількість продукту, перш ніж зберегти запис.</li>
-                </ol>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleAnswer(this)">
-                <span class="faq-question-text">Чи є в додатку можливість налаштування дієтичних обмежень, як-от безглютенова або веганська дієта?</span>
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Щоб скористатися функцією сканування штрих-кодів у додатку CalorieCount+, виконайте наступні кроки:
-                <ol>
-                    <li>Відкрийте додаток та перейдіть до розділу додавання нового продукту в свій щоденник харчування.</li>
-                    <li>Натисніть на іконку штрих-коду, яка знаходиться поруч з полем пошуку продукту. Це активує камеру вашого пристрою.</li>
-                    <li>Наведіть камеру на штрих-код продукту, який ви хочете додати. Переконайтеся, що штрих-код чітко видно і знаходиться у рамці камери.</li>
-                    <li>Дочекайтеся, поки додаток сканує штрих-код. Це займе лише кілька секунд.</li>
-                    <li>Після успішного сканування, інформація про продукт автоматично з'явиться у вашому журналі харчування. Ви можете перевірити або відредагувати кількість продукту, перш ніж зберегти запис.</li>
-                </ol>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleAnswer(this)">
-                <span class="faq-question-text">Як можна синхронізувати дані з іншими додатками або пристроями?</span>
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Щоб скористатися функцією сканування штрих-кодів у додатку CalorieCount+, виконайте наступні кроки:
-                <ol>
-                    <li>Відкрийте додаток та перейдіть до розділу додавання нового продукту в свій щоденник харчування.</li>
-                    <li>Натисніть на іконку штрих-коду, яка знаходиться поруч з полем пошуку продукту. Це активує камеру вашого пристрою.</li>
-                    <li>Наведіть камеру на штрих-код продукту, який ви хочете додати. Переконайтеся, що штрих-код чітко видно і знаходиться у рамці камери.</li>
-                    <li>Дочекайтеся, поки додаток сканує штрих-код. Це займе лише кілька секунд.</li>
-                    <li>Після успішного сканування, інформація про продукт автоматично з'явиться у вашому журналі харчування. Ви можете перевірити або відредагувати кількість продукту, перш ніж зберегти запис.</li>
-                </ol>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleAnswer(this)">
-                <span class="faq-question-text">Як змінити мову в додатку?</span>
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Щоб скористатися функцією сканування штрих-кодів у додатку CalorieCount+, виконайте наступні кроки:
-                <ol>
-                    <li>Відкрийте додаток та перейдіть до розділу додавання нового продукту в свій щоденник харчування.</li>
-                    <li>Натисніть на іконку штрих-коду, яка знаходиться поруч з полем пошуку продукту. Це активує камеру вашого пристрою.</li>
-                    <li>Наведіть камеру на штрих-код продукту, який ви хочете додати. Переконайтеся, що штрих-код чітко видно і знаходиться у рамці камери.</li>
-                    <li>Дочекайтеся, поки додаток сканує штрих-код. Це займе лише кілька секунд.</li>
-                    <li>Після успішного сканування, інформація про продукт автоматично з'явиться у вашому журналі харчування. Ви можете перевірити або відредагувати кількість продукту, перш ніж зберегти запис.</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="final-info">
-    <div class="container">
-        <div class="final-content">
-            <div class="content">
-                <div>
-                    <h1>Додаток для тих, хто хоче слідкувати за своїм харчуванням на раз-два</h1>
-                    <p>Інтерфейс ReliefBody забезпечує зручність і ефективність, допомагаючи вам тримати під контролем калорії та макронутрієнти за допомогою кількох дотиків.</p>
-                </div>
-                <div class="download-links2">
-                    <a href="#"><img src="static/images/landingPage1/AppleDownload.svg" alt="Download on Apple"></a>
-                    <a href="#"><img src="static/images/landingPage1/GoogleDownload.svg" alt="Download on Google"></a>
-                </div>
-            </div>
-            <img src="static/images/landingPage1/iPhone15PlusLast.png" alt="Phone">
-            <div class="download-links2_2">
-                <a href="#"><img src="static/images/landingPage1/AppleDownload.svg" alt="Download on Apple"></a>
-                <a href="#"><img src="static/images/landingPage1/GoogleDownload.svg" alt="Download on Google"></a>
-            </div>
-        </div>
-        <div class="scrolling-container">
-            <h2>ReliefBody – інтуїтивний додаток для ефективного відстеження харчування</h2>
-            <div class="scrolling-text" data-simplebar>
-                <p>ReliefBody – це ідеальний інструмент для тих, хто шукає простий та швидкий спосіб контролювати своє харчування. Наш додаток дозволяє користувачам легко додавати їжу, скануючи штрих-коди або використовуючи швидкий пошук у великій базі даних продуктів. Інтерфейс ReliefBody забезпечує зручність і ефективність, допомагаючи вам тримати під контролем калорії та макронутрієнти за допомогою кількох дотиків. Незалежно від того, чи ви прагнете схуднути, набрати вагу, або просто підтримувати здоровий режим харчування, ReliefBody робить цей процес легким і приємним, допомагаючи вам досягти ваших цілей без зусиль.</p>
-                <p>ReliefBody – це ідеальний інструмент для тих, хто шукає простий та швидкий спосіб контролювати своє харчування. Наш додаток дозволяє користувачам легко додавати їжу, скануючи штрих-коди або використовуючи швидкий пошук у великій базі даних продуктів. Інтерфейс ReliefBody забезпечує зручність і ефективність, допомагаючи вам тримати під контролем калорії та макронутрієнти за допомогою кількох дотиків. Незалежно від того, чи ви прагнете схуднути, набрати вагу, або просто підтримувати здоровий режим харчування, ReliefBody робить цей процес легким і приємним, допомагаючи вам досягти ваших цілей без зусиль.</p>
-                <p>ReliefBody – це ідеальний інструмент для тих, хто шукає простий та швидкий спосіб контролювати своє харчування. Наш додаток дозволяє користувачам легко додавати їжу, скануючи штрих-коди або використовуючи швидкий пошук у великій базі даних продуктів. Інтерфейс ReliefBody забезпечує зручність і ефективність, допомагаючи вам тримати під контролем калорії та макронутрієнти за допомогою кількох дотиків. Незалежно від того, чи ви прагнете схуднути, набрати вагу, або просто підтримувати здоровий режим харчування, ReliefBody робить цей процес легким і приємним, допомагаючи вам досягти ваших цілей без зусиль.</p>
-                <p>ReliefBody – це ідеальний інструмент для тих, хто шукає простий та швидкий спосіб контролювати своє харчування. Наш додаток дозволяє користувачам легко додавати їжу, скануючи штрих-коди або використовуючи швидкий пошук у великій базі даних продуктів. Інтерфейс ReliefBody забезпечує зручність і ефективність, допомагаючи вам тримати під контролем калорії та макронутрієнти за допомогою кількох дотиків. Незалежно від того, чи ви прагнете схуднути, набрати вагу, або просто підтримувати здоровий режим харчування, ReliefBody робить цей процес легким і приємним, допомагаючи вам досягти ваших цілей без зусиль.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<footer class="footer" id="contacts">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-info">
-                <div class="footer-logo">
-                    <img src="static/images/landingPage1/logo.svg" class="logo2">
-                    <p>Інтуїтивний Додаток для Ефективного Відстеження Харчування</p>
+    <section class="final-info">
+        <div class="container">
+            <div class="final-content">
+                <div class="content">
+                    <div>
+                        <h1 data-translate-key="final-title">Додаток для тих, хто хоче слідкувати за своїм харчуванням на раз-два</h1>
+                        <p data-translate-key="final-description">Інтерфейс ReliefBody забезпечує зручність і ефективність, допомагаючи вам тримати під контролем калорії та макронутрієнти за допомогою кількох дотиків.</p>
+                    </div>
+                    <div class="download-links2">
+                        <a href="#"><img src="static/images/landingPage1/AppleDownload.svg" alt="Download on Apple" data-translate-key="download-apple"></a>
+                        <a href="#"><img src="static/images/landingPage1/GoogleDownload.svg" alt="Download on Google" data-translate-key="download-google"></a>
+                    </div>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#main">Головна</a></li>
-                    <li><a href="#aboutUs">Про нас</a></li>
-                    <li><a href="#reviews">Відгуки</a></li>
-                    <li><a href="#contacts">Контакти</a></li>
-                </ul>
-            </div>
-            <div class="download-links">
-                <h3>Завантажити додаток</h3>
-                <a href="#"><img src="static/images/landingPage1/AppleDownload2.svg" alt="Download on Apple"></a>
-                <a href="#"><img src="static/images/landingPage1/GoogleDownload2.svg" alt="Download on Google"></a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>© 2024 ReliefBody. Всі права захищені</p>
-                <div class="social-icons3">
-                    <img src="static/images/landingPage1/facebook.svg" alt="Facebook">
-                    <img src="static/images/landingPage1/insta.svg" alt="Instagram">
-                    <img src="static/images/landingPage1/twitter.svg" alt="Twitter">
-                    <img src="static/images/landingPage1/linkedin.svg" alt="LinkedIn">
+                <img src="static/images/landingPage1/iPhone15PlusLast.png" alt="Phone">
+                <div class="download-links2_2">
+                    <a href="#"><img src="static/images/landingPage1/AppleDownload.svg" alt="Download on Apple" data-translate-key="download-apple"></a>
+                    <a href="#"><img src="static/images/landingPage1/GoogleDownload.svg" alt="Download on Google" data-translate-key="download-google"></a>
                 </div>
             </div>
+            <div class="scrolling-container">
+                <h2 data-translate-key="scrolling-title">ReliefBody – інтуїтивний додаток для ефективного відстеження харчування</h2>
+                <div class="scrolling-text" data-simplebar>
+                    <p data-translate-key="scrolling-text">ReliefBody - це ідеальний інструмент для тих, хто шукає простий та швидкий спосіб контролювати своє харчування.
+                        Наш додаток дозволяє користувачам легко додавати їжу, скануючи штрих-коди або використовуючи швидкий пошук у
+                        великій базі даних продуктів. Інтерфейс ReliefBody забезпечує зручність і ефективність, допомагаючи вам тримати
+                        під контролем калорії та макронутрієнти за допомогою кількох дотиків. Незалежно від того, чи ви прагнете схуднути,
+                        набрати вагу, або просто підтримувати здоровий режим харчування, ReliefBody робить цей процес легким і приємним,
+                        допомагаючи вам досягти ваших цілей без зусиль. ReliefBody - це ідеальний інструмент для тих, хто шукає простий та
+                        швидкий спосіб контролювати своє харчування. Наш додаток дозволяє користувачам легко додавати їжу, скануючи штрих-коди
+                        або використовуючи швидкий пошук у великій базі даних продуктів. Інтерфейс ReliefBody забезпечує зручність і ефективність,
+                        допомагаючи вам тримати під контролем калорії та макронутрієнти за допомогою кількох дотиків. Незалежно від того,
+                        чи ви прагнете схуднути, набрати вагу, або просто підтримувати здоровий режим харчування, ReliefBody робить цей
+                        процес легким і приємним, допомагаючи вам досягти ваших цілей без зусиль.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="static/images/landingPage1/logo.svg" class="logo2">
+                        <p data-translate-key="footer-description">Інтуїтивний Додаток для Ефективного Відстеження Харчування</p>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#main" data-translate-key="nav-home">Головна</a></li>
+                        <li><a href="#aboutUs" data-translate-key="nav-about">Про нас</a></li>
+                        <li><a href="#reviews" data-translate-key="nav-reviews">Відгуки</a></li>
+                        <li><a href="#contacts" data-translate-key="nav-contacts">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="download-links">
+                    <h3 data-translate-key="download-title">Завантажити додаток</h3>
+                    <a href="#"><img src="static/images/landingPage1/AppleDownload2.svg" alt="Download on Apple" data-translate-key="download-apple"></a>
+                    <a href="#"><img src="static/images/landingPage1/GoogleDownload2.svg" alt="Download on Google" data-translate-key="download-google"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p data-translate-key="footer-copyright">© 2024 ReliefBody. Всі права захищені</p>
+                    <div class="social-icons3">
+                        <img src="static/images/landingPage1/facebook.svg" alt="Facebook">
+                        <img src="static/images/landingPage1/insta.svg" alt="Instagram">
+                        <img src="static/images/landingPage1/twitter.svg" alt="Twitter">
+                        <img src="static/images/landingPage1/linkedin.svg" alt="LinkedIn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 {% endblock %}

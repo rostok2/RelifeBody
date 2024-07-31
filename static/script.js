@@ -1,3 +1,51 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const langSwitch = document.querySelector('.language-switch');
+    const langUAElem = document.getElementById('language-ua');
+    const langENElem = document.getElementById('language-en');
+
+    langSwitch.addEventListener('click', function(event) {
+        if (event.target.id === 'language-ua' || event.target.id === 'language-en') {
+            setLanguage(event.target.id.split('-')[1]);
+        }
+    });
+
+    function setLanguage(language) {
+        fetch(`/static/i18n/${language}.json`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(translations => {
+                document.querySelectorAll('[data-translate-key]').forEach(element => {
+                    const key = element.getAttribute('data-translate-key');
+                    if (translations[key]) {
+                        element.innerHTML = translations[key];
+                    }
+                });
+                updateLanguageSwitch(language);
+            })
+            .catch(error => {
+                console.error('Error loading language file:', error);
+            });
+    }
+
+    function updateLanguageSwitch(activeLang) {
+        if (activeLang === 'ua') {
+            langUAElem.classList.add('active');
+            langENElem.classList.remove('active');
+        } else {
+            langUAElem.classList.remove('active');
+            langENElem.classList.add('active');
+        }
+    }
+
+    // Set default language
+    setLanguage('ua');
+});
+
+// Existing functions
 function preventScroll(e) {
     e.preventDefault();
 }
