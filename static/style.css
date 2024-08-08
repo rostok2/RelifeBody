@@ -126,7 +126,7 @@ body {
 .language-switch span {
     cursor: pointer;
     opacity: 0.6;
-    transition: opacity 0.3s ease; /* Додаємо плавний перехід */
+    transition: opacity 0.3s ease;
 }
 
 .language-switch span.active {
@@ -173,7 +173,7 @@ body {
 .nav .nav-menu {
     display: flex;
     gap: 45px;
-    padding-right: 175px;
+    padding-right: 14%;
     list-style: none;
 }
 
@@ -271,7 +271,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: -3px;
+    letter-spacing: 0;
     text-transform: uppercase;
     margin-top: 90px;
 }
@@ -384,7 +384,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: -3px;
+    letter-spacing: 0;
     text-transform: uppercase;
     margin-bottom: 80px;
     padding-top: 80px;
@@ -417,7 +417,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 42px;
-    letter-spacing: -0.64px;
+    letter-spacing: 0;
     text-align: left;
     max-width: 520px;
 }
@@ -489,7 +489,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: -3px;
+    letter-spacing: 0;
     text-transform: uppercase;
     margin-bottom: 45px;
 }
@@ -530,6 +530,7 @@ body {
     color: #111;
     font-size: 35px;
     line-height: 0;
+    margin-left: 10px;
 }
 
 .faq-answer {
@@ -544,7 +545,7 @@ body {
     line-height: 21px;
     letter-spacing: -0.05px;
     text-align: left;
-    margin-top: 1px;
+    margin-top: 4px;
 }
 
 .faq-answer.show {
@@ -555,6 +556,7 @@ body {
 
 .faq-answer ol {
     padding-left: 20px;
+    margin: 5px 0;
 }
 
 /* final-info*/
@@ -770,6 +772,24 @@ body {
 
 
 /* Media Queries */
+
+@media (max-width: 1245px) {
+
+    /* Header Styles */
+    .phone-photo .m {
+        width: 40%;
+    }
+
+    .phone-photo .mCentral {
+        width: 45%;
+    }
+
+    /* about section */
+    .about-section {
+        margin-top: 260px;
+    }
+}
+
 @media (max-width: 1220px) {
     /*testimonials*/
     .text-item p {
@@ -806,16 +826,8 @@ body {
         top: 350px;
     }
 
-    .phone-photo .m {
-        width: 40%;
-    }
-
-    .phone-photo .mCentral {
-        width: 45%;
-    }
-
     .nav .nav-menu {
-        padding-right: 70px;
+        padding-right: 10%;
     }
 
     .download-links {
@@ -823,6 +835,10 @@ body {
     }
 
     /* about section */
+    .about-section {
+        margin-top: 230px;
+    }
+
     .feature-item {
         margin: 0 20px;
         gap: 10px;
@@ -864,6 +880,10 @@ body {
         font-size: 35px;
     }
 
+    .scrolling-container h2 {
+        padding-bottom: 0;
+    }
+
 }
 
 @media (max-width: 860px) {
@@ -878,18 +898,19 @@ body {
     }
 
     .about-section h1 {
-        margin-top: 40px;
+        margin: 0px;
     }
 
     .features {
         gap: 50px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .feature-item {
         flex-direction: column;
         justify-content: center;
-        gap: 40px;
+        gap: 10px;
     }
+
     .feature-item.reverse {
         flex-direction: column;
     }
@@ -905,6 +926,10 @@ body {
         padding-left: 0;
         margin-left: 0;
         align-items: center;
+    }
+
+    .button1, .button2 {
+        margin-top: -10px;
     }
 
     .feature-item.reverse .feature-text {
@@ -933,8 +958,9 @@ body {
         display: none;*/
 
     /*final-info*/
+
     .final-info {
-        margin-top: 60px;
+        margin-top: 0;
     }
 
     .final-content {
@@ -974,7 +1000,7 @@ body {
     }
 
     .scrolling-container {
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     /* footer */
@@ -992,21 +1018,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .header {
-        background-image: url(images/landingPage1/768bg.png);
-        max-width: 768px;
-    }
-
-    .testimonials {
-        background-image: url(images/landingPage1/768bg2.png);
-        max-width: 768px;
-    }
-
-    .footer {
-        background-image: url(images/landingPage1/768bg3.png);
-        max-width: 768px;
-    }
+@media (max-width: 854px) {
 
     /* header */
     .logo2, .logo {
@@ -1103,6 +1115,23 @@ body {
     .about-section {
         margin-top: 200px;
     }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background-image: url(images/landingPage1/768bg.png);
+        max-width: 768px;
+    }
+
+    .testimonials {
+        background-image: url(images/landingPage1/768bg2.png);
+        max-width: 768px;
+    }
+
+    .footer {
+        background-image: url(images/landingPage1/768bg3.png);
+        max-width: 768px;
+    }
 
     /*fag*/
     .faq h1 {
@@ -1197,7 +1226,7 @@ body {
 
     /*footer*/
     .footer {
-        min-height: 550px;
+        min-height: 520px;
     }
 
     .footer-info {
@@ -1282,7 +1311,7 @@ body {
     }
 
     .features {
-        gap: 20px;
+        gap: 40px;
         margin-top: 50px;
     }
 
@@ -1334,10 +1363,6 @@ body {
     }
 
     /*final-info*/
-    .final-info {
-        margin-top: 40px;
-    }
-
     .final-content img {
         width: 90%;
     }
@@ -1351,7 +1376,7 @@ body {
     }
 
     .scrolling-container {
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     .scrolling-text {
